@@ -5,10 +5,10 @@
 //  должны заменены на *.
 // **Пример: "Номер вашей карты: **********1245"**
 
-let userCardNumber = ( prompt("введите номер кредитной карты") );
+let userCardNumber = ( prompt("введите  16-значный номер кредитной карты") );
 
 let cardRepl = userCardNumber.slice( 0,12).replace(/\d/g, "*");
-
+         
 alert( "номер кредитной карты: " +cardRepl + userCardNumber.slice( 12) );
 
 console.log( "номер кредитной карты: " +cardRepl + userCardNumber.slice( 12) );
